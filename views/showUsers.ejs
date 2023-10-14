@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="container mx-auto">
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b">ID</th>
+                    <th class="py-2 px-4 border-b">titulo</th>
+                    <th class="py-2 px-4 border-b">año </th>
+                    <th class="py-2 px-4 border-b">director </th>
+                    <th class="py-2 px-4 border-b">genero</th>
+                    <th class="py-2 px-4 border-b">descripcion </th>
+                    <th class="py-2 px-4 border-b">pais</th>
+                    <th class="py-2 px-4 border-b">puntaje </th>
+
+
+
+
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+                <%  peliculas.forEach(function (pelicula){ %>
+                    <tr>
+                        <td class="py-2 px-4 border-b my-4"><%= pelicula.id %></td>
+                        <td class="py-2 px-4 border-b my-4"> <%= pelicula.titulo %></td>
+                        <td class="py-2 px-4 border-b my-4"> <%= pelicula.ano_lanzamiento %></td>
+                        <td class="py-2 px-4 border-b my-4"> <%= pelicula.director %></td>
+                        <td class="py-2 px-4 border-b my-4"> <%= pelicula.genero %></td>
+                        <td class="py-2 px-4 border-b my-4"> <%= pelicula.descripcion %></td>
+                        <td class="py-2 px-4 border-b my-4"> <%= pelicula.pais %></td>
+
+                        <td class="py-2 px-4 border-b my-4">
+                             <i class="<%= pelicula.puntaje >= 1  ? 'fa-solid fa-star' : 'fa-regular fa-star' %> "></i>
+                             <i class="<%= pelicula.puntaje >= 2  ? 'fa-solid fa-star' : 'fa-regular fa-star' %> "></i>
+                             <i class="<%= pelicula.puntaje >= 3  ? 'fa-solid fa-star' : 'fa-regular fa-star' %> "></i>
+                             <i class="<%= pelicula.puntaje >= 4  ? 'fa-solid fa-star' : 'fa-regular fa-star' %> "></i>
+                             <i class="<%= pelicula.puntaje >= 5  ? 'fa-solid fa-star' : 'fa-regular fa-star' %> "></i>
+                            
+                        </td>
+                          
+
+                    </tr>
+                <% })%>
+             
+                
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+</body>
+</html>

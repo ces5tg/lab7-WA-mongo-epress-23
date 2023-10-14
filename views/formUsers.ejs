@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Define una variable con la cadena de clases
+        const inputStyles = "form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1";
+      </script>
+</head>
+<body>
+    <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+        <form action="/formUsers" method="post">
+          <div class="mb-4">
+            <label for="titulo" class="block text-gray-700">Título</label>
+            <input name="titulo" type="text" id="titulo" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1 ">
+          </div>
+      
+          <div class="mb-4">
+            <label for="ano" class="block text-gray-700">Año de lanzamiento</label>
+            <input name="ano" type="text" id="ano" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1">
+          </div>
+      
+          <div class="mb-4">
+            <label for="director" class="block text-gray-700">Director</label>
+            <input name="director" type="text" id="director" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1">
+          </div>
+      
+          <div class="mb-4">
+            <label for="genero" class="block text-gray-700">Género</label>
+            <input name="genero" type="text" id="genero" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1">
+          </div>
+      
+          <div class="mb-4">
+            <label for="descripcion" class="block text-gray-700">Descripción</label>
+            <input name="descripcion" type="text" id="descripcion" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1">
+          </div>
+      
+          <div class="mb-4">
+            <label for="pais" class="block text-gray-700">País</label>
+            <input name="pais" type="text" id="pais" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1">
+          </div>
+      
+          <div class="mb-4">
+            <label for="puntaje" class="block text-gray-700">Puntaje</label>
+            <input name="puntaje" type="number" id="puntaje" class="form-input mt-1 block w-full border-2 border-blue-500 rounded-md py-2 px-1">
+          </div>
+      
+          <div class="mt-4">
+            <input type="submit" value="Enviar" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 cursor-pointer">
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
